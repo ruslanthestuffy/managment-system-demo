@@ -1,4 +1,4 @@
-import { http } from 'lib';
+import { http } from 'lib/index';
 
 import { SafeUser } from 'types';
 

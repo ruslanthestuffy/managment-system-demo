@@ -1,6 +1,6 @@
 import { FC, ComponentProps, forwardRef, RefObject } from 'react';
 
-import { Loader } from 'components/common';
+import { Loader } from 'components/common/index';
 import { ButtonSize, ButtonVariant } from 'components/common/Button/types';
 import { sizeMap } from 'components/common/Button/utils';
 

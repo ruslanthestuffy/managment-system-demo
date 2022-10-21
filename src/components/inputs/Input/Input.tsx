@@ -31,7 +31,7 @@ interface InputProps extends ComponentProps<'input'> {
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ icon, helperText, label, status = 'normal', placeholder, type, onSelect, ...props }, ref) => {
+  ({ icon, helperText, label, status = 'normal', placeholder = ' ', type, onSelect, ...props }, ref) => {
     const [isPasswordHidden, setIsPasswordHidden] = useState(true);
     const [caretPosition, setCaretPosition] = useState(0);
 
@@ -65,7 +65,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       <Wrapper status={status}>
         <StyledInput
           type={isPasswordType && isPasswordHidden ? 'password' : 'text'}
-          placeholder={isPasswordType ? '********' : placeholder || ' '}
+          placeholder={placeholder}
           onSelect={interceptOnSelect}
           {...props}
           ref={inputRef}

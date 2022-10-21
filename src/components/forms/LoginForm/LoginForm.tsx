@@ -87,13 +87,6 @@ export const LoginForm: FC = () => {
             helperText={errors.password?.message}
             {...register('password')}
           />
-          <Checkbox
-            checked={false}
-            onChange={() => null}
-            disabled
-            label="Запомнить меня"
-            name="rememberMe"
-          />
         </GapContainer>
 
         <GapContainer gap={24}>

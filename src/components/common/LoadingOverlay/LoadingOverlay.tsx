@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Loader } from 'components/common';
+import { Loader } from 'components/common/index';
 
 import { LoadingContainer } from 'components/common/LoadingOverlay/styles';
 
